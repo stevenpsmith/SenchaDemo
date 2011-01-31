@@ -5,7 +5,7 @@ Demo.App = Ext.extend(Ext.Panel, {
     
     initComponent: function() {
    		this.list = new Demo.views.SpeakerList();
-   		this.detail = new Demo.views.SpeakerDetails2();
+   		this.detail = new Demo.views.SpeakerDetails();
 
 		this.refreshIcon = new Ext.Button({
             iconCls: 'refresh',
