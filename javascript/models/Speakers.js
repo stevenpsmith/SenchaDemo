@@ -7,7 +7,7 @@ Demo.stores.Speakers = new Ext.data.Store({
 	storeId: 'SpeakerStore',
     model  : 'Speaker',
 //	sorters: 'last_name',
-	autoLoad: true,
+	autoLoad: true, //calls load after Store creation, otherwise would need to load in code
 	proxy: {
 	    type: 'ajax',
         url : 'speakers.json'
