@@ -22,6 +22,11 @@ Ext.regApplication({
 	defaultUrl: 'demo/',
 
     launch: function() {
+		if (Ext.is.Android){
+			Ext.get('demoStylesheet').dom.href = "sencha/css/android.css";
+		}else if (Ext.is.iOS){
+			Ext.get('demoStylesheet').dom.href = "sencha/css/apple.css";
+		}
         var app = new Demo.App();
     }
 });
